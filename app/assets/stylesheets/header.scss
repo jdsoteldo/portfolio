@@ -1,0 +1,41 @@
+.twitter {
+  color: #1DA1F2;
+}
+
+.twitter:hover {
+  color: #2b99c3;
+}
+
+.instagram {
+  color: #c32aa3;
+}
+
+.instagram:hover {
+  color: #833AB4;
+}
+
+.github {
+  color: #333;
+}
+
+.github:hover {
+  color: #6e5494;
+}
+
+.email {
+  color: #ff7979;
+}
+
+.email:hover {
+  color: #e84118;
+}
+
+.display-right {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 80px;
+}
+
+.navbar-brand {
+  margin-left: 25px;
+}

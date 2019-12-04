@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <h2><span class="navbar-brand">JD SOTELDO</span></h2>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse display-right" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="mailto:dev.jdsoteldo@gmail.com?subject=hello there!">
+        <i class="fa fa-envelope fa-2x email"></i>
+      </a>
+      <a class="nav-item nav-link" href="https://twitter.com/jdsoteldo" target="_blank">
+        <i class="fab fa-twitter fa-2x twitter"></i>
+      </a>
+      <a class="nav-item nav-link" href="https://instagram.com/soteldoooooo" target="_blank">
+        <i class="fab fa-instagram fa-2x instagram"></i>
+      </a>
+      <a class="nav-item nav-link" href="https://github.com/jdsoteldo" target="_blank">
+        <i class="fab fa-github fa-2x github"></i>
+      </a>
+      <% if cookies[:locale] == 'es'%>
+        <li class="lang-btn"><%= link_to("English", action: "change_locale", controller: "application", locale: :en, class: 'nav-item nav-link' )%></li>
+      <% elsif cookies[:locale] == 'en'%>
+        <li class="lang-btn"><%= link_to("Español", action: "change_locale", controller: "application", locale: :es, class: 'nav-item nav-link' )%></li>
+      <% end %>
+    </div>
+  </div>
+</nav>
