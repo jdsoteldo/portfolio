@@ -17,11 +17,6 @@
       <a class="nav-item nav-link" href="https://github.com/jdsoteldo" target="_blank">
         <i class="fab fa-github fa-2x github"></i>
       </a>
-      <% if cookies[:locale] == 'es'%>
-        <li class="lang-btn"><%= link_to("English", action: "change_locale", controller: "application", locale: :en, class: 'nav-item nav-link' )%></li>
-      <% elsif cookies[:locale] == 'en'%>
-        <li class="lang-btn"><%= link_to("Español", action: "change_locale", controller: "application", locale: :es, class: 'nav-item nav-link' )%></li>
-      <% end %>
     </div>
   </div>
 </nav>
