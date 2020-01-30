@@ -1,6 +1,22 @@
-<section>
+<footer>
   <div class="jd-footer">
-    <h2 style="color: #fff;">Let's Connect</h2>
-    <h2><%= link_to 'Check out my Blog', posts_path %></h2>
+    <div class="footer-row1">
+      <h2 style="color: #fff;">Let's Connect</h2>
+      <i class="fa fa-envelope fa-2x email first-icon-margin"></i>
+      <i class="fab fa-twitter fa-2x twitter icon-margin"></i>
+      <i class="fab fa-instagram fa-2x instagram icon-margin"></i>
+      <i class="fab fa-github fa-2x github icon-margin"></i>
+    </div><br>
+    <div class="footer-row2">
+      <h2><%= link_to 'Check out my Blog', posts_path %></h2>
+      <% if current_user && current_user.role == "admin" %>
+      <%= link_to 'New', new_post_path %><br>
+      <% end %>
+      <% if !current_user %>
+      <%= link_to 'Sign In', new_user_session_path %>
+      <% else %>
+      <%= link_to 'Sign Out', destroy_user_session_path %>
+      <% end %>
+    </div>
   </div>
-</section>
+</footer>
