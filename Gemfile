@@ -6,7 +6,7 @@ ruby '2.6.3'
 # Rails 6.0.0 gem
 gem 'rails', '<= 6.0'
 gem 'i18n'
-gem 'sqlite3'
+gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 4.3'
 # Use SCSS for stylesheets
