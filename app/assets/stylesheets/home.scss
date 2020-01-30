@@ -50,4 +50,38 @@
   font-family: 'Solway', serif;
   padding-top: 30px;
   text-align: center;
+  margin-bottom: 4vh;
+}
+
+@media (max-width: 575px) {
+  #tech-row1,
+  #tech-row2,
+  #tech-row3 {
+      display: inline-grid;
+      margin-right: 0px;
+      margin-left: 0px;
+  }
+}
+
+@media (min-width: 576px) {
+  .tech-row {
+      margin-top: 15px;
+  }
+
+  .card {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+
+
+.my-work {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.card {
 }
