@@ -4,9 +4,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.3'
 
 # Rails 6.0.0 gem
-gem 'rails', '~> 6.0'
+gem 'rails', '<= 6.0'
 gem 'i18n'
-gem 'pg'
+gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 4.3'
 # Use SCSS for stylesheets
@@ -18,6 +18,7 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 gem 'devise', '~> 4.7', '>= 4.7.1'
+gem 'act', '~> 0.0.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
