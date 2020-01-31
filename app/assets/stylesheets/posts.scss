@@ -73,3 +73,44 @@
   text-decoration: none;
   color: #2d3436;
 }
+
+.post-show {
+  width: 60%;
+  margin: auto;
+  margin-top: 7vh;
+  border: 1px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding: 10px 45px;
+}
+
+.post-show-title {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-family: 'Sigmar One', sans-serif;
+  color: #212529;
+  text-align: center;
+}
+
+.edit-text {
+  text-align: center;
+}
+
+.post-edit {
+  width: 60%;
+  margin: auto;
+}
+
+#title-edit {
+  margin-bottom: 7vh;
+  margin-top: 5vh;
+}
+
+#content-edit {
+  margin-bottom: 7vh;
+  margin-top: 5vh;
+  min-height: 55vh;
+}
+
+.edit-submit-files {
+  margin-bottom: 2vh;
+}

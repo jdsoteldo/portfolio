@@ -1,0 +1,16 @@
+<div class="post-show">
+  <div class="">
+    <% if @post.image %>
+      <%= image_tag @post.image, class: "post-index-image" %><br>
+    <% else %>
+    <% end %>
+  </div>
+  <h2 class="post-show-title"><%= @post.title %></h2><br>
+  <div class="">
+    <%= @post.content %>
+  </div>
+  <% if current_user && current_user.posts.include?(@post) || current_user.role == 'admin' %>
+    <%= link_to 'Edit', edit_user_post_path(current_user.id, @post) %>
+    <%= link_to 'Delete', user_post_path(current_user), method: :delete, data: {confirm: 'Are you sure you want to delete?'} %>
+  <% end %>
+</div>
