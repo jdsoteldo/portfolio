@@ -1,6 +1,6 @@
 <div class="post-show">
   <div class="">
-    <% unless !@post.image %>
+    <% unless !@post.image.attached? %>
       <%= image_tag @post.image, class: "post-index-image" %><br>
     <% end %>
   </div>
