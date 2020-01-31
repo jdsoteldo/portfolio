@@ -1,8 +1,7 @@
 <div class="post-show">
   <div class="">
-    <% if @post.image %>
+    <% unless !@post.image %>
       <%= image_tag @post.image, class: "post-index-image" %><br>
-    <% else %>
     <% end %>
   </div>
   <h2 class="post-show-title"><%= @post.title %></h2><br>

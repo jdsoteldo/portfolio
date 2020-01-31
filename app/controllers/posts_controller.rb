@@ -25,7 +25,7 @@ class PostsController < ApplicationController
   end
 
   def update
-    @user = current_user
+    @post.user = current_user
     @post.update(posts_params)
     @post.save
     redirect_to posts_path
@@ -40,7 +40,7 @@ class PostsController < ApplicationController
   private
 
   def posts_params
-    params.require(:post).permit(:title, :content, :user_id, :image).merge(user_id: params[:nickname])
+    params.require(:post).permit(:title, :content, :user_id, :image, :nickname)
   end
 
   def current

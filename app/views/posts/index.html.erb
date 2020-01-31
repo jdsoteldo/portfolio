@@ -1,11 +1,11 @@
 <% @posts.each do |post| %>
   <div class="posts">
     <div>
-      <% if post.image %>
-        <%= link_to (image_tag post.image, class: "post-index-image"),  post_path(post.id) %><br>
+      <% unless !post.image %>
+        <%= image_tag post.image, class: "post-index-image" %><br>
       <% end %>
     </div>
     <p class="post-index-title"><%= link_to post.title, post_path(post.id), class: "post-index-title" %></p><br>
-    <p>Published by: <strong><%= current_user.nickname %></strong> <%= post.created_at.strftime('%F') %></p>
+    <p>Published by: <strong><%= post.user.nickname %></strong> <%= post.created_at.strftime('%F') %></p>
   </div>
 <% end %>
