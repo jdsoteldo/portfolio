@@ -9,7 +9,7 @@
     </div><br>
     <div class="footer-row2">
       <h2><%= link_to 'Check out my Blog', posts_path, class: "blog-link"%></h2>
-      <% if current_user && current_user.role == "admin" %>
+      <% if current_user && current_user.role == "admin" || current_user.role == "mod" %>
       <%= link_to 'New Post', new_user_post_path(current_user.id), class: "sign-link" %><br>
       <% end %>
       <% if !current_user %>
