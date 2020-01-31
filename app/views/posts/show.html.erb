@@ -8,7 +8,7 @@
   <div class="">
     <%= @post.content %>
   </div>
-  <% if current_user && current_user.posts.include?(@post) || current_user.role == 'admin' %>
+  <% if current_user && current_user.posts.include?(@post) %>
     <%= link_to 'Edit', edit_user_post_path(current_user.id, @post) %>
     <%= link_to 'Delete', user_post_path(current_user), method: :delete, data: {confirm: 'Are you sure you want to delete?'} %>
   <% end %>
