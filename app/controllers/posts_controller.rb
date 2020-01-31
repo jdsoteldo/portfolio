@@ -25,6 +25,7 @@ class PostsController < ApplicationController
   end
 
   def update
+    @user = current_user
     @post.update(posts_params)
     @post.save
     redirect_to posts_path
