@@ -1,3 +1,48 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=News+Cycle&display=swap');
+
+.new-post-form {
+  width: 50%;
+  margin: auto;
+}
+
+.title-label {
+  margin-top: 6vh;
+}
+
+.post-title {
+  margin-bottom: 6vh;
+  font-family: 'News Cycle', sans-serif;
+}
+
+.post-title, .post-content {
+  line-height: 3;
+  border: 1px #2c3e50;
+  border-radius: 2.5px;
+  border-style: groove;
+  width: 100%;
+}
+
+.post-content {
+  min-height: 30vh;
+  font-family: 'News Cycle', sans-serif;
+  font-size: 16px;
+}
+
+.submit-post {
+  border: none;
+  color: #2c3e50;
+  background-color: #fff;
+  margin-top: 3vh;
+  padding: 5px 8px;
+}
+
+.submit-post:hover {
+  background-color: #2c3e50;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 8px;
+  transition: 0.2s;
+}
