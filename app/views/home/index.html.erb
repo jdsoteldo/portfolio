@@ -70,7 +70,7 @@
 </section>
 
 <section>
-  <div class="project-section">
+  <div class="project-section sections">
     <h1 class="some-work-title">Some of my work</h1>
     <div class="my-work">
       <div class="card" style="width: 16rem;">
@@ -103,15 +103,41 @@
   </div>
 </section>
 
-<section>
-  <div class="project-section">
-    <h1 class="some-work-title">2020 Goals</h1>
-
+<section class="goals-section">
+  <h1 class="some-work-title">JD's 2020 Goals</h1>
+  <div class="container">
+    <div class="items">
+      <% if current_user && current_user.role == 'admin' %>
+        <input id="item1" type="checkbox" checked>
+      <% end %>
+      <label for="item1">Create my Personal Website</label>
+      <% if current_user && current_user.role == 'admin' %>
+        <input id="item2" type="checkbox">
+      <% end %>
+      <label for="item2">Deploy my Personal Website</label>
+      <% if current_user && current_user.role == 'admin' %>
+        <input id="item3" type="checkbox">
+      <% end %>
+      <label for="item3">Learn Swift</label>
+      <% if current_user && current_user.role == 'admin' %>
+        <input id="item4" type="checkbox">
+      <% end %>
+      <label for="item4">Deploy first Swift Application</label>
+      <% if current_user && current_user.role == 'admin' %>
+        <input id="item5" type="checkbox">
+      <% end %>
+      <label for="item5">Find work as a Swift Developer</label>
+      <% if current_user && current_user.role == 'admin' %>
+        <input id="item6" type="checkbox">
+      <% end %>
+      <label for="item6">Run a 20 Miles Race</label>
+      <h2 class="done" aria-hidden="true">Done</h2>
+      <h2 class="undone" aria-hidden="true">Not Done</h2>
+    </div>
   </div>
 </section>
 <section>
-  <div class="project-section">
-    <h1 class="some-work-title">References</h1>
+  <div class="">
 
   </div>
 </section>
