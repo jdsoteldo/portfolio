@@ -46,3 +46,30 @@
   padding: 5px 8px;
   transition: 0.2s;
 }
+
+.post-index-image {
+  height: 300px;
+  width: 100%;
+  margin: auto;
+}
+
+.posts {
+  width: 45%;
+  margin: auto;
+  border: 1px solid #b2bec3;
+  padding: 5px;
+  margin-top: 7vh;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.post-index-title {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: 'Sigmar One', sans-serif;
+  color: #212529;
+}
+
+.post-index-title:hover {
+  text-decoration: none;
+  color: #2d3436;
+}

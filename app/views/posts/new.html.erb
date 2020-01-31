@@ -1,4 +1,4 @@
-<%= form_for @post do |f| %>
+<%= form_for [current_user, @post] do |f| %>
 <div class="new-post-form">
   <div class="title-div">
     <%= f.label "Title of your Post", class: "title-label" %><br>
@@ -8,7 +8,7 @@
     <%= f.label "Describe your post", class: "content-label" %><br>
     <%= f.text_area :content, required: true, class: "post-content" %>
   </div>
-  <%= f.file_field :image, multiple: false, direct_upload: true, required: true, class: "submit-files choose-file" %><br>
+  <%= f.file_field :image, multiple: false, direct_upload: true, required: false, class: "submit-files choose-file" %><br>
   <%= f.submit 'Submit your Post', class: "submit-post" %>
 </div>
 <% end %>
