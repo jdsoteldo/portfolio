@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
   def index
-  end 
+    @tasks = Task.all.order(:status)
+  end
 end

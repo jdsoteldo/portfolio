@@ -1,0 +1,12 @@
+<div class="tasks-div">
+<% @tasks.each do |t| %>
+    <% if current_user && current_user.role == 'admin' %>
+      <%= t.task.capitalize %>
+      <% if t.status == 'pending' %>
+        <%= link_to 'Done', status_task_path(t, status: 'approved'), method: :put, class:"approve-btn", data: {confirm: "Are you sure?"} %><br>
+      <% else %>
+        <%= link_to 'Not Done', status_task_path(t, status: 'pending'), method: :put, class:"disapprove-btn", data: {confirm: "Are you sure?"} %><br>
+      <% end %>
+    <% end %>
+<% end %>
+</div>
