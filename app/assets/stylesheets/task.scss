@@ -1,0 +1,56 @@
+.task-btn {
+  color: #fff;
+  text-decoration: none;
+  padding: 1vh 1.3vh;
+  border-radius: 3px;
+  margin-left: 5vh;
+  font-family: 'Solway', serif;
+  font-size: 16px;
+}
+
+.approve-btn {
+  background-color: green;
+}
+
+.disapprove-btn {
+  background-color: red;
+}
+
+.approve-btn:hover,
+.disapprove-btn:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.task-individual {
+  margin: 30px 0px;
+  display: flex;
+}
+
+.tasks-div {
+  width: 60%;
+  margin: auto;
+  justify-content: space-around;
+  border: 1px #2c3e50;
+  padding: 10px 15px;
+  border-style: groove;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.24);
+}
+
+.disabled-btn {
+  margin-left: 10px;
+  background-color: #f1f2f6;
+}
+
+.done-btn {
+  color: #7bed9f
+}
+
+.ip-btn {
+  color: #eccc68;
+}
+
+.task-title {
+  font-family: 'Solway', serif;
+  font-size: 18px;
+}

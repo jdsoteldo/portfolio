@@ -33,10 +33,10 @@ class TasksController < ApplicationController
 
   def status
     @task = Task.find_by(id: params[:id])
-    @task.update(status: 'approved') if params[:status] == 'approved'
+    @task.update(status: 'completed') if params[:status] == 'completed'
     @task.update(status: 'pending') if params[:status] == 'pending'
     @task.save
-    redirect_to root_path  
+    redirect_to root_path
   end
 
   private
