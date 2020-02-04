@@ -5,9 +5,7 @@
   </button>
   <div class="collapse navbar-collapse display-right" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <% unless current_page?(controller: 'posts', action: 'index') %>
-        <h4><%= link_to 'Check the Blog', posts_path, id:"blog-header-link", class: "nav-item nav-link active" %></h4>
-      <% end %>
+      <h4><%= link_to 'Check the Blog', posts_path, id:"blog-header-link", class: "nav-item nav-link active" %></h4>
       <a class="nav-item nav-link active" href="mailto:dev.jdsoteldo@gmail.com?subject=hello there!">
         <i class="fa fa-envelope fa-2x email"></i>
       </a>
