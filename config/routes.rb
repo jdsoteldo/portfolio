@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :users do
     resources :posts, except: [:index, :show]
   end
-  
+
   resources :posts, only: [:index, :show]
   resources :tasks do
     member do

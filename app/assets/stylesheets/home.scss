@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 body {
   position: relative;
-  min-height: 200vh;
+  min-height: 190vh;
   height: auto;
   background: #f8f9fa;
 }
@@ -11,7 +11,7 @@ body {
 .me-section {
   background-color: #2c3e50;
   width: 100%;
-  min-height: 55vh;
+  min-height: 45vh;
   height: auto;
 }
 
@@ -37,13 +37,13 @@ body {
 .sections {
   background-color: #f8f9fa;
   width: 100%;
-  height: 80vh;
+  padding-top: 45px;
+  padding-bottom: 65px;
 }
 
 .project-section {
   background-color: #f8f9fa;
   width: 100%;
-  height: 110vh;
 }
 
 .some-work-title {
@@ -84,6 +84,7 @@ body {
   width: 80%;
   margin: auto;
   justify-content: space-around;
+  padding-bottom: 65px;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:500,700);
@@ -229,7 +230,7 @@ input:checked + label::before {
 
 .goals-section {
   background-color: #f8f9fa;
-  height: 140vh;
+  height: 100vh;
   width: 100%;
 }
 
