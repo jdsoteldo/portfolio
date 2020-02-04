@@ -1,0 +1,28 @@
+<div class="tasks-div">
+  <% @tasks.each do |t| %>
+    <div class="task-individual">
+      <div class="task-title">
+        <%= t.task.capitalize %>
+      </div>
+      <% if current_user && current_user.role == 'admin' %>
+        <div class="task-status">
+          <% if t.status == 'pending' %>
+            <%= link_to 'Complete', status_task_path(t, status: 'completed'), method: :put, class:"approve-btn task-btn", data: {confirm: "Are you sure?"} %>
+            <%= link_to 'Delete', task_path(t), method: :delete, class: "task-delete" %><br>
+          <% elsif t.status == 'completed' %>
+            <%= link_to 'Not Done', status_task_path(t, status: 'pending'), method: :put, class:"disapprove-btn task-btn", data: {confirm: "Are you sure?"} %>
+            <%= link_to 'Delete', task_path(t), method: :delete, class: "task-delete" %><br>
+          <% end %>
+        </div>
+      <% else %>
+        <div class="task-status">
+          <% if t.status != 'pending' %>
+            <button type="button" name="button" class="disabled-btn done-btn" disabled>Completed</button>
+          <% elsif t.status == 'pending' %>
+            <button type="button" name="button" class="disabled-btn ip-btn" disabled>In Progress</button>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>

@@ -30,6 +30,19 @@
   color: #e84118;
 }
 
+.linkedin,
+.linkedin-in {
+  color: #2867B2
+}
+
+.linkedin:hover {
+  color: #1e3799;
+}
+
+.linkedin-in:hover {
+  color: #ffffff;
+}
+
 .display-right {
   display: flex;
   flex-direction: row-reverse;
@@ -38,4 +51,12 @@
 
 .navbar-brand {
   margin-left: 25px;
+}
+
+#blog-header-link {
+  margin-right: 6vh;
+}
+
+#blog-header-link:hover {
+  text-decoration: underline;
 }
