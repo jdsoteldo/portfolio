@@ -106,9 +106,6 @@
 
 <section class="goals-section">
   <h1 class="some-work-title">JD's 2020 Goals</h1>
-  <% if current_user && current_user.role == 'admin' %>
-    <%= link_to 'New Goal', new_task_path %><br>
-  <% end %>
   <%= render "layouts/tasks" %>
 </section>
 
