@@ -20,13 +20,16 @@
     </div><br>
     <div class="footer-row2">
       <h2><%= link_to 'Check out my Blog', posts_path, class: "blog-link"%></h2>
-      <% if current_user && current_user.role == "admin" || current_user && current_user.role == "mod" %>
-      <%= link_to 'New Post', new_user_post_path(current_user.id), class: "sign-link" %><br>
+      <% if current_user && current_user.role == "admin" %>
+        <%= link_to 'New Post', new_user_post_path(current_user.id), class: "sign-link" %><br>
+        <%= link_to 'New Goal', new_task_path %><br>
+      <% elsif current_user && current_user.role == "mod" %>
+        <%= link_to 'New Post', new_user_post_path(current_user.id), class: "sign-link" %><br>
       <% end %>
       <% if !current_user %>
-      <%= link_to 'Sign In', new_user_session_path, class: "sign-link" %>
+        <%= link_to 'Sign In', new_user_session_path, class: "sign-link" %>
       <% else %>
-      <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: "sign-link" %>
+        <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: "sign-link" %>
       <% end %>
     </div>
   </div>
