@@ -1,4 +1,4 @@
 class Post < ApplicationRecord
-  has_one_attached :image, service: :s3
+  has_one_attached :image
   belongs_to :user
 end
