@@ -17,6 +17,6 @@
     <%= yield %>
   </body><br>
   <br><footer>
-    <%= render 'layouts/footer' unless current_page?(controller: 'devise/sessions', action: 'new' ) || current_page?(controller: 'devise/registrations', action:'new' ) || current_page?(controller:'posts', action:'show') %>
+    <%= render 'layouts/footer' unless current_page?(controller: 'devise/sessions', action: 'new' ) || current_page?(controller: 'devise/registrations', action:'new' ) || current_page?(post_path(@post)) %>
   </footer>
 </html>
