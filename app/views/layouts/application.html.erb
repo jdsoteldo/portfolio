@@ -11,13 +11,12 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <%= render "layouts/header" %>
   <body>
     <%= yield %>
   </body><br>
   <br><footer>
-    <%= render 'layouts/footer' unless current_page?(controller: 'devise/sessions', action: 'new' ) || current_page?(controller: 'devise/registrations', action:'new' ) %>
+    <%= render 'layouts/footer' unless current_page?(controller: 'devise/sessions', action: 'new' ) || current_page?(controller: 'devise/registrations', action:'new' ) || current_page?(controller:'posts', action:'show') %>
   </footer>
 </html>
