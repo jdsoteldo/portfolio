@@ -1,13 +1,15 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <h2><a href="/" class="navbar-brand">JD SOTELDO</a></h2>
+<nav id="blog-navbar" class="navbar navbar-expand-lg navbar-light">
+  <h2><a href="/" class="navbar-brand-blog">JD SOTELDO</a></h2>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse display-right" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <h4><%= link_to 'Check the Blog', posts_path, id:"blog-header-link", class: "nav-item nav-link active" %></h4>
+      <% if current_user && current_user.role != "user" %>
+        <%= link_to 'New Post', new_user_post_path(current_user.id), class:"blog-nav-link" %>
+      <% end %>
       <li class="nav-item dropdown">
-       <a class="nav-link dropdown-toggle social-media" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       <a id="light-letter" class="nav-link dropdown-toggle social-media" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          Social Media
        </a>
        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">

@@ -11,8 +11,13 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=New+Rocker&display=swap" rel="stylesheet">
   </head>
-  <%= render "layouts/header" %>
+  <% if current_page?(controller:"home") %>
+    <%= render "layouts/header" %>
+  <% else %>
+    <%= render "layouts/blog_header" %>
+  <% end %>
   <body>
     <%= yield %>
   </body>
