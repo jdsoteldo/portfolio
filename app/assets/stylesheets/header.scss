@@ -53,10 +53,32 @@
   margin-left: 25px;
 }
 
+.navbar-brand-blog, .navbar-brand-blog:hover {
+  color: #f8f9fa;
+  margin-left: 25px;
+  font-size: 20px;
+  font-family: 'New Rocker', cursive;
+}
+
 #blog-header-link {
   margin-right: 6vh;
 }
 
 #blog-header-link:hover {
   text-decoration: underline;
+}
+
+#blog-navbar {
+  background: #000;
+}
+
+#light-letter {
+  color: #f8f9fa;
+  font-family: 'New Rocker', cursive;
+}
+
+.blog-nav-link, .blog-nav-link:hover {
+  font-family: 'New Rocker', cursive;
+  margin: auto;
+  color: #fff;
 }

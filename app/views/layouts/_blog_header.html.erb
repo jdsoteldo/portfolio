@@ -1,0 +1,35 @@
+<nav id="blog-navbar" class="navbar navbar-expand-lg navbar-light">
+  <h2><a href="/" class="navbar-brand-blog">JD SOTELDO</a></h2>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse display-right" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <% if current_user && current_user.role != "user" %>
+        <%= link_to 'New Post', new_user_post_path(current_user.id), class:"blog-nav-link" %>
+      <% end %>
+      <li class="nav-item dropdown">
+       <a id="light-letter" class="nav-link dropdown-toggle social-media" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Social Media
+       </a>
+       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+         <a class="dropdown-item nav-item nav-link" href="mailto:dev.jdsoteldo@gmail.com?subject=hello there!">
+           <i class="fa fa-envelope fa-2x email"></i>
+         </a>
+         <a class="dropdown-item nav-item nav-link" href="https://twitter.com/jdsoteldo" target="_blank">
+           <i class="fab fa-twitter fa-2x twitter"></i>
+         </a>
+         <a class="dropdown-item nav-item nav-link" href="https://www.linkedin.com/in/jd-soteldo/" target="_blank">
+           <i class="fab fa-linkedin fa-2x linkedin"></i>
+         </a>
+         <a class="dropdown-item nav-item nav-link" href="https://instagram.com/soteldoooooo" target="_blank">
+           <i class="fab fa-instagram fa-2x instagram"></i>
+         </a>
+         <a class="dropdown-item nav-item nav-link" href="https://github.com/jdsoteldo" target="_blank">
+           <i class="fab fa-github fa-2x github"></i>
+         </a>
+        </div>
+     </li>
+    </div>
+  </div>
+</nav>
