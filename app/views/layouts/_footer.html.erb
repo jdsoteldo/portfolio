@@ -26,11 +26,6 @@
       <% elsif current_user && current_user.role == "mod" %>
         <%= link_to 'New Post', new_user_post_path(current_user.id), class: "sign-link" %><br>
       <% end %>
-      <% if !current_user %>
-        <%= link_to 'Sign In', new_user_session_path, class: "sign-link" %>
-      <% else %>
-        <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: "sign-link" %>
-      <% end %>
     </div>
   </div>
 </footer>

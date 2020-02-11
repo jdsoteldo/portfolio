@@ -13,11 +13,6 @@
     <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=New+Rocker&display=swap" rel="stylesheet">
   </head>
-  <% if current_page?(controller:"home") %>
-    <%= render "layouts/header" %>
-  <% else %>
-    <%= render "layouts/blog_header" %>
-  <% end %>
   <body>
     <%= yield %>
   </body>

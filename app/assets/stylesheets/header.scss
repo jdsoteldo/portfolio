@@ -61,7 +61,8 @@
 }
 
 #blog-header-link {
-  margin-right: 6vh;
+  margin-right: 4vh;
+  font-family: 'PT Sans', sans-serif;
 }
 
 #blog-header-link:hover {
@@ -81,4 +82,26 @@
   font-family: 'New Rocker', cursive;
   margin: auto;
   color: #fff;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.sign-in-light, .sign-out-light, .sign-in-dark, .sign-out-dark {
+  margin: auto;
+  margin-right: 20px;
+}
+
+.sign-in-light, .sign-out-light {
+  color: #000;
+  font-family: 'PT Sans', sans-serif
+}
+
+.sign-in-dark, .sign-out-dark, .sign-in-dark:hover, .sign-out-dark:hover {
+  color: #fff;
+  font-family: 'New Rocker', cursive;
+}
+
+.social-media-margin {
+  margin-right: 4vh;
+  font-family: 'PT Sans', sans-serif
 }
