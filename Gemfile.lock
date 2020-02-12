@@ -96,6 +96,9 @@ GEM
     childprocess (3.0.0)
     claide (0.9.1)
     colored (1.2)
+    commontator (6.3.0)
+      rails (>= 5.2)
+      will_paginate
     concurrent-ruby (1.1.5)
     crass (1.0.6)
     devise (4.7.1)
@@ -234,6 +237,7 @@ GEM
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.4)
+    will_paginate (3.2.1)
     xpath (3.2.0)
       nokogiri (~> 1.8)
     zeitwerk (2.2.2)
@@ -247,6 +251,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
+  commontator
   devise (~> 4.7, >= 4.7.1)
   dotenv-rails
   i18n
@@ -256,6 +261,7 @@ DEPENDENCIES
   puma (~> 4.3)
   rails (<= 6.0)
   sass-rails (>= 6)
+  sassc-rails
   selenium-webdriver
   spring
   spring-watcher-listen (~> 2.0.0)
