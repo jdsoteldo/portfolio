@@ -1,0 +1,89 @@
+.login-form {
+  width: 40%;
+  border-radius: 3px;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  margin-top: 10vh;
+}
+
+.login-field {
+  border: none;
+  background-color: #f3f3f3;
+  margin: auto;
+  width: 40%;
+}
+
+.submit-login {
+  margin: auto;
+  height: 5.5vh;
+  width: 40%;
+  border: 1px solid #000;
+}
+
+.submit-login:hover {
+  background-color: #273c75;
+  transition: 0.2s;
+}
+
+.not-reg, .not-reg-link {
+  color: #fff;
+  text-align: center;
+}
+
+
+.not-reg-link:hover {
+  color: #000;
+  text-decoration: line-through;
+}
+
+.not-reg-div {
+  height: 8vh;
+  margin-top: 30px;
+  background-color: #273c75;
+}
+
+.forgot {
+  text-align: center;
+  color: #000;
+}
+
+.forgot:hover {
+  color: #273c75;
+  text-decoration: line-through;
+}
+
+.sign-up-form {
+  width: 50%;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  border-radius: 3px;
+  margin-top: 40px;
+}
+
+.sign-up-field {
+  background: #f3f3f3;
+  border: none;
+  width: 55%;
+  margin: auto;
+}
+
+.name-sign-up-field {
+  width: 27%;
+  border: none;
+  background: #f3f3f3;
+  margin: 0px 5px;
+}
+
+.display-name {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.submit-sign-up {
+  width: 55%;
+}
+
+.age {
+  text-align: center;
+}
