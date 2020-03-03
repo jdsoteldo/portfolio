@@ -1,31 +1,24 @@
 <footer>
   <div class="jd-footer">
     <div class="footer-row1">
-      <h2 style="color: #fff;">Let's Connect</h2>
-      <a href="mailto:dev.jdsoteldo@gmail.com?subject=hello there!">
-        <i class="fa fa-envelope fa-2x email first-icon-margin"></i>
-      </a>
-      <a href="https://twitter.com/jdsoteldo" target="_blank">
-        <i class="fab fa-twitter fa-2x twitter icon-margin"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/jd-soteldo/" target="_blank">
-        <i class="fab fa-linkedin-in fa-2x linkedin-in icon-margin"></i>
-      </a>
-      <a href="https://instagram.com/soteldoooooo" target="_blank">
-        <i class="fab fa-instagram fa-2x instagram icon-margin"></i>
-      </a>
-      <a href="https://github.com/jdsoteldo" target="_blank">
-        <i class="fab fa-github fa-2x github icon-margin"></i>
-      </a>
+      <h2 style="color: #fff;">Social Media</h2>
+      <div class="" style="display: flex;">
+        <a href="mailto:dev.jdsoteldo@gmail.com?subject=hello there!">
+          <i class="fa fa-envelope fa-2x email first-icon-margin"></i>
+        </a>
+        <a href="https://twitter.com/jdsoteldo" target="_blank">
+          <i class="fab fa-twitter fa-2x twitter icon-margin"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/jd-soteldo/" target="_blank">
+          <i class="fab fa-linkedin-in fa-2x linkedin-in icon-margin"></i>
+        </a>
+        <a href="https://instagram.com/soteldoooooo" target="_blank">
+          <i class="fab fa-instagram fa-2x instagram icon-margin"></i>
+        </a>
+        <a href="https://github.com/jdsoteldo" target="_blank" style="color: #fff;">
+          <i class="fab fa-github fa-2x icon-margin"></i>
+        </a>
+      </div>
     </div><br>
-    <div class="footer-row2">
-      <h2><%= link_to 'Check out my Blog', posts_path, class: "blog-link"%></h2>
-      <% if current_user && current_user.role == "admin" %>
-        <%= link_to 'New Post', new_user_post_path(current_user.id), class: "sign-link" %><br>
-        <%= link_to 'New Goal', new_task_path %><br>
-      <% elsif current_user && current_user.role == "mod" %>
-        <%= link_to 'New Post', new_user_post_path(current_user.id), class: "sign-link" %><br>
-      <% end %>
-    </div>
   </div>
 </footer>
