@@ -237,3 +237,32 @@ input:checked + label::before {
 .social-media {
   font-family: 'Solway', serif;
 }
+
+@media(max-width: 500px) {
+  .me-text {
+    width: 65%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 5vh;
+  }
+  .me-intro-row {
+    display: contents;
+  }
+  body {
+    width: 100%;
+  }
+}
+
+@media(max-width: 500px) {
+  .card {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 8vh;
+  }
+  .my-work {
+    display: block;
+  }
+  .skill-icons {
+    display: contents;
+  }
+}
