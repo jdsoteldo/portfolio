@@ -12,4 +12,5 @@ Rails.application.routes.draw do
       put 'status'
     end
   end
+  get :change_locale, controller: 'application'
 end

@@ -46,7 +46,7 @@ body {
   width: 100%;
 }
 
-.some-work-title {
+.index-title {
   color: #2c3e50;
   font-family: 'Solway', serif;
   padding-top: 30px;
@@ -264,4 +264,15 @@ input:checked + label::before {
   .skill-icons {
     display: contents;
   }
+}
+
+.lang-link {
+  margin: auto;
+  color: #000;
+  margin-right: 4vh;
+}
+
+.lang-link:hover {
+  text-decoration: underline;
+  color: #000;
 }

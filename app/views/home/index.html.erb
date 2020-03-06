@@ -7,14 +7,15 @@
       Fluent on English, Spanish and conversational on Dutch and Papiamento.<br>
       <br>Currently in: Miami, FL<br>
       <br>Site Under Construction...<br>
-      <!-- <br><a href="./assets/documents/jd-soteldo.pdf" target="_blank">My Resume</a></p> -->
+      <%= t('hello') %>
+      <!-- <br><a href="./assets/documents/jd-soteldo.pdf" download="jd-soteldo.pdf" target="_blank">My Resume</a></p> -->
     </div>
   </div>
 </section>
 
 <section>
   <div class="sections skills">
-    <h1 class="some-work-title">Skills</h1>
+    <h1 class="index-title">Technologies I use</h1>
     <div class="skill-icons">
       <div class="row tech-row" id="tech-row1">
         <div class="col-sm tech-col">
@@ -73,7 +74,7 @@
 
 <section>
   <div class="project-section sections">
-    <h1 class="some-work-title">Some of my work</h1>
+    <h1 class="index-title">Some of my work</h1>
     <div class="my-work">
       <div class="card" style="width: 16rem;">
         <img src="https://bogota-dev.s3.us-east-2.amazonaws.com/bd_logo_white_bg.png" class="card-img-top" alt="..." style="height: 25vh;">
@@ -106,15 +107,15 @@
 </section>
 
 <section class="goals-section">
-  <h1 class="some-work-title">JD's 2020 Goals</h1>
+  <h1 class="index-title">JD's 2020 Goals</h1>
   <%= render "layouts/tasks" %>
 </section>
 
-<section>
-  <div class="">
+<section class="goals-section">
+  <h1 class="index-title">Personal References</h1>
 
-  </div>
 </section>
+
 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/7UM_2KJZ91o?start=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 <footer>
   <%= render 'layouts/footer' %>

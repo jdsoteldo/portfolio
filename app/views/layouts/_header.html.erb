@@ -28,6 +28,11 @@
           </a>
         </div>
       </li>
+      <% if cookies[:locale] == 'es'%>
+        <%= link_to  "English", {action: "change_locale", controller: "application", locale: :en}, class:"lang-link" %>
+      <% elsif cookies[:locale] == 'en'%>
+        <%= link_to "Español", {action: "change_locale", controller: "application", locale: :es}, class:"lang-link" %>
+      <% end %>
       <% if current_user %>
         <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class:"sign-out-light" %>
       <% else %>
