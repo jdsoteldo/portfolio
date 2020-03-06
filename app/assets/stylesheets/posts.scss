@@ -115,3 +115,12 @@
 .edit-submit-files {
   margin-bottom: 2vh;
 }
+
+@media(max-width: 500px) {
+  .post-show {
+    width: 80%;
+  }
+  .posts {
+    width: 75%;
+  }
+}

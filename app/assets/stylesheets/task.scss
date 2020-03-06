@@ -53,3 +53,9 @@
   font-family: 'Solway', serif;
   font-size: 18px;
 }
+
+@media(max-width: 500px){
+  .tasks-div {
+    width: 75%;
+  }
+}
