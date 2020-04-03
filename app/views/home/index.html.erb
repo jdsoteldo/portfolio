@@ -7,14 +7,14 @@
       Fluent on English, Spanish and conversational on Dutch and Papiamento.<br>
       <br>Currently in: Miami, FL<br>
       <br>Site Under Construction...<br>
-      <!-- <br><a href="./assets/documents/jd-soteldo.pdf" target="_blank">My Resume</a></p> -->
+      <!-- <br><a href="./assets/documents/jd-soteldo.pdf" download="jd-soteldo.pdf" target="_blank">My Resume</a></p> -->
     </div>
   </div>
 </section>
 
 <section>
   <div class="sections skills">
-    <h1 class="some-work-title">Skills</h1>
+    <h1 class="index-title">Technologies I use</h1>
     <div class="skill-icons">
       <div class="row tech-row" id="tech-row1">
         <div class="col-sm tech-col">
@@ -73,7 +73,7 @@
 
 <section>
   <div class="project-section sections">
-    <h1 class="some-work-title">Some of my work</h1>
+    <h1 class="index-title">Some of my work</h1>
     <div class="my-work">
       <div class="card" style="width: 16rem;">
         <img src="https://bogota-dev.s3.us-east-2.amazonaws.com/bd_logo_white_bg.png" class="card-img-top" alt="..." style="height: 25vh;">
@@ -106,16 +106,88 @@
 </section>
 
 <section class="goals-section">
-  <h1 class="some-work-title">JD's 2020 Goals</h1>
+  <h1 class="index-title">JD's 2020 Goals</h1>
   <%= render "layouts/tasks" %>
 </section>
 
-<section>
-  <div class="">
+<section class="references-section">
+  <div class="slideshow-container">
+    <h1 class="index-title">Personal References</h1>
+    <div class="dots">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <div class="mySlides">
+      <div class="card card-width">
+        <h5 class="card-header">Diego Zuluaga</h5>
+        <div class="card-body">
+          <h5 class="card-title"><%= t('reference_title_1') %></h5>
+          <p class="card-text">Trabajé cerca de un año con Juan Diego Soteldo y puedo decir que es una persona responsable, bastante maduro con gran adaptabilidad para el aprendizaje continuo en múltiples áreas del desarrollo web, como el manejo de Ruby on Rails , javascript y otros lenguajes de programación y Frameworks, la gestión de información en varios tipos de bases de datos, trabajo bajo metodologías agiles un gran interés por la eficiencia y el apoyo a sus compañeros. Recomiendo altamente  Juan Diego para trabajar en equipos de desarrollo ya que puede aportar grandes habilidades y actitudes para sacar proyectos de alto impacto.</p>
+          <a href="https://www.linkedin.com/in/diegozuluagagil/" class="btn btn-primary" target="_blank">More about Diego</a>
+        </div>
+      </div>
+    </div>
 
+    <div class="mySlides">
+      <div class="card card-width">
+        <h5 class="card-header">Juan Acero</h5>
+        <div class="card-body">
+          <h5 class="card-title"><%= t('reference_title_2') %></h5>
+          <p class="card-text">Juan Diego es una persona muy trabajadora y responsable, comprometido en las actividades que le han sido asignadas, es muy activo y su curiosidad le lleva a indagar por la solución que mejor se adecue al problema que enfrenta. Es alguien con quien es muy grato trabajar debido a su dinamismo, muchas veces su terquedad le hace enfocarse en un problema en particular y no deja de pensar en este hasta que dé con una solución. Considero que su perfil de desarrollador está muy orientado al Backend, esto no quiere decir que carezca de creatividad, todo lo contrario, también se destaca como Frontend, pero he visto que disfruta mas de lidiar con problemas que involucren alguna lógica. En el tiempo que pude trabajar con él, me percaté que es una persona que siempre está a la hora y que, si toca echar código hasta tarde, lo hace sin poner peros de por medio. JD es una persona que está ahí cuando se le necesita, y si tienes la dicha de ser parte de su circulo de amistades, encontraras a una excelente persona con quien compartir una gran amistad, compartí poco tiempo con él, pero siento que es de esas personas que te brindan lo mejor de si. </p>
+          <a href="https://www.linkedin.com/in/juan-acero-prieto/" class="btn btn-primary" target="_blank">More about Juan</a>
+        </div>
+      </div>
+      <br>
+    </div>
+    <div class="mySlides">
+      <div class="card card-width">
+        <h5 class="card-header">Mauricio Scioville</h5>
+        <div class="card-body">
+          <h5 class="card-title"><%= t('reference_title_3') %></h5>
+          <p class="card-text">Trabaja enfocado en los objetivos y requerimientos sin dejar de lado los detalles. Lo considero una persona responsable y diligente. Se mantiene aprendiendo y mejorando la calidad de su trabajo, le gusta el desafío de una tarea que puede estar fuera de su zona de comfort en búsca de mejorar sus habilidades profesionales. Es un excelente compañero con el cual el trabajo se vuelve divertido.</p>
+          <a href="https://www.linkedin.com/in/mauricio-scioville/" class="btn btn-primary" target="_blank">More about Mou</a>
+        </div>
+      </div>
+      <br>
+    </div>
   </div>
 </section>
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/7UM_2KJZ91o?start=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script type="text/javascript">
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+</script>
+
 <footer>
   <%= render 'layouts/footer' %>
 </footer>
