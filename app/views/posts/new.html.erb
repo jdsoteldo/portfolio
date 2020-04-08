@@ -5,7 +5,7 @@
     <%= f.text_field :title, required: true, class: "post-title", placeholder: 'Title of your Post' %>
   </div>
   <div class="content-div">
-    <%= f.text_area :content, required: true, class: "post-content", placeholder: "Talk..." %>
+    <%= f.rich_text_area :content, required: true, class: "post-content" %>
   </div>
   <%= f.file_field :image, multiple: true, direct_upload: true, required: false, class: "submit-files choose-file" %><br>
   <%= f.submit 'Submit your Post', class: "submit-post" %>
