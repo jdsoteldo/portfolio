@@ -14,3 +14,7 @@
  *= require_self
  *= require commontator/application
  */
+
+body {
+  width: 100%;
+}

@@ -30,7 +30,6 @@ body {
 
 .me-intro-row {
   display: flex;
-  margin-right: -15px;
   margin-left: -15px;
 }
 
@@ -230,7 +229,7 @@ input:checked + label::before {
 .goals-section, .references-section {
   background-color: #f8f9fa;
   width: 100%;
-  padding-bottom: 40vh;
+  padding-bottom: 20vh;
 }
 
 .social-media {

@@ -3,7 +3,7 @@
 <div class="post-edit">
   <%= form_for [current_user, @post] do |f| %>
   <%= f.text_field :title, placeholder: "Title", class: "form-control", id: "title-edit" %>
-  <%= f.text_area :content, placeholder: "Explain", class: "form-control", id: "content-edit" %>
+  <%= f.rich_text_area :content, class: "form-control", id: "content-edit"%>
   <%= f.file_field :image, multiple: false, direct_upload: true, class: "edit-submit-files" %><br>
   <%= f.submit class: "submit-post" %>
   <% end %>
