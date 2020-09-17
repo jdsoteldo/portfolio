@@ -9,7 +9,7 @@ body {
 }
 
 .me-section {
-  background-color: #2c3e50;
+  background-color: #f8f9fa;
   width: 100%;
   min-height: 55vh;
   height: auto;
@@ -29,6 +29,7 @@ body {
 }
 
 .me-intro-row {
+  background-image: url("cool-background.png");
   display: flex;
   margin-left: -15px;
 }
@@ -79,6 +80,7 @@ body {
 
 
 .my-work {
+  background: #f8f9fa;
   display: flex;
   width: 80%;
   margin: auto;

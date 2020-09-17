@@ -1,7 +1,6 @@
-<%= render "layouts/blog_header" %>
 <div class="post-show">
   <div class="">
-    <% unless !@post.image.attached? %>
+    <% if @post.image.attached? %>
       <%= image_tag @post.image, class: "post-index-image" %><br>
     <% end %>
   </div>
