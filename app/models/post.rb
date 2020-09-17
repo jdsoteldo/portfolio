@@ -3,6 +3,7 @@ class Post < ApplicationRecord
   belongs_to :user
   has_rich_text :content
   acts_as_commontable
+
   extend FriendlyId
-  friendly_id :title, use: :slugged
+  friendly_id :id, use: :slugged
 end

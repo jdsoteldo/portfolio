@@ -1,11 +1,10 @@
 class PostsController < ApplicationController
-  before_action :current, only: [:edit, :update, :destroy]
+  before_action :current, only: [:show, :edit, :update, :destroy]
   def index
     @posts = Post.all
   end
 
   def show
-    @post = Post.friendly.find_by(id: params[:id])
   end
 
   def new
