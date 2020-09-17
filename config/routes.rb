@@ -4,13 +4,14 @@ Rails.application.routes.draw do
   root to: "home#index"
   mount Commontator::Engine => '/commontator'
   resources :users do
-    resources :posts, except: [:index, :show]
+    resources :posts, except: [:index]
   end
-  resources :posts, only: [:index, :show]
+  resources :posts, only: [:index]
   resources :tasks do
     member do
       put 'status'
     end
   end
   get :change_locale, controller: 'application'
+  resources :posts, param: :slug, only: [:show]
 end

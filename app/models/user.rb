@@ -5,6 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :posts
   acts_as_commontator
-  validates :password, length: { minimum: 8 }
+  validates :password, length: { minimum: 6 }
 
 end

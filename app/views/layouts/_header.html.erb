@@ -5,43 +5,44 @@
   </button>
   <div class="collapse navbar-collapse display-right" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a href="#technologies" class="nav-link active">Technologies</a>
-      <a href="#work" class="nav-link active">Work</a>
-      <a href="#goals" class="nav-link active">Goals</a>
-      <a href="#references" class="nav-link active">References</a>
-      <%= link_to 'Check the Blog', posts_path, id:"blog-header-link", class: "nav-item nav-link active" %>
-      <li class="nav-item dropdown">
+      <% if current_user && current_user.role == "admin" %>
+        <%= link_to 'New Post', new_user_post_path(current_user.id), class:"nav-link active" %>
+        <%= link_to 'New Task', new_task_path, class: "nav-link active" %>
+      <% end %>
+      <% if current_page?("/") %>
+        <a href="#technologies" class="nav-link active">Technologies</a>
+        <a href="#work" class="nav-link active">Work</a>
+        <a href="#goals" class="nav-link active">Goals</a>
+        <a href="#references" class="nav-link active">References</a>
+      <% end %>
+      <%= link_to 'Check the Blog', posts_path, id:"blog-header-link", class: "nav-link active" %>
+      <% if current_user %>
+        <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class:"nav-link active" %>
+      <% else %>
+        <%= link_to 'Sign In', new_user_session_path, class:"nav-link active" %>
+      <% end %>
+      <li class=" dropdown">
         <a class="nav-link dropdown-toggle social-media social-media-margin" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #000;">
           Social Media
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style=" border: none; background: #f8f9fa;">
-          <a class="dropdown-item nav-item nav-link" href="mailto:dev.jdsoteldo@gmail.com?subject=hello there!">
+          <a class="dropdown-item  nav-link" href="mailto:dev.jdsoteldo@gmail.com?subject=hello there!">
            <i class="fa fa-envelope fa-2x email"></i> Email
           </a>
-          <a class="dropdown-item nav-item nav-link" href="https://twitter.com/jdsoteldo" target="_blank">
+          <a class="dropdown-item  nav-link" href="https://twitter.com/jdsoteldo" target="_blank">
            <i class="fab fa-twitter fa-2x twitter"></i> Twitter
           </a>
-          <a class="dropdown-item nav-item nav-link" href="https://www.linkedin.com/in/jd-soteldo/" target="_blank">
+          <a class="dropdown-item  nav-link" href="https://www.linkedin.com/in/jd-soteldo/" target="_blank">
            <i class="fab fa-linkedin fa-2x linkedin"></i> Linkedin
           </a>
-          <a class="dropdown-item nav-item nav-link" href="https://instagram.com/soteldoooooo" target="_blank">
+          <a class="dropdown-item  nav-link" href="https://instagram.com/soteldoooooo" target="_blank">
            <i class="fab fa-instagram fa-2x instagram"></i> Instagram
           </a>
-          <a class="dropdown-item nav-item nav-link" href="https://github.com/jdsoteldo" target="_blank">
+          <a class="dropdown-item  nav-link" href="https://github.com/jdsoteldo" target="_blank">
            <i class="fab fa-github fa-2x github"></i> Github
           </a>
         </div>
       </li>
-      <%# if cookies[:locale] == 'es'%>
-        <%#= link_to  "English", {action: "change_locale", controller: "application", locale: :en}, class:"lang-link" %>
-      <%# elsif cookies[:locale] == 'en'%>
-        <%#= link_to "Español", {action: "change_locale", controller: "application", locale: :es}, class:"lang-link" %>
-      <%# end %>
-      <%# if current_user %>
-        <%#= link_to 'Sign Out', destroy_user_session_path, method: :delete, class:"sign-out-light" %>
-      <%# else %>
-        <%#= link_to 'Sign In', new_user_session_path, class:"sign-in-light" %>
-      <%# end %>
     </div>
   </div>
 </nav>
