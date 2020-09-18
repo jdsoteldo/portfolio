@@ -41,11 +41,6 @@ body {
   padding-bottom: 65px;
 }
 
-.project-section {
-  background-color: #f8f9fa;
-  width: 100%;
-}
-
 .index-title {
   color: #2c3e50;
   font-family: 'Solway', serif;
@@ -55,6 +50,29 @@ body {
   background-color: #f8f9fa;
 }
 
+.project-section {
+  background-color: #dff9fb;
+  width: 100%;
+  padding-bottom: 10vh;
+}
+
+.work-index-title {
+  background: #dff9fb;
+  font-family: 'Solway', serif;
+  padding-top: 30px;
+  text-align: center;
+  margin-bottom: 4vh;
+  color: #2c3e50;
+}
+
+.my-work {
+  background: #dff9fb;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+  padding-bottom: 65px;
+}
 
 @media (max-width: 575px) {
   #tech-row1,
@@ -75,17 +93,6 @@ body {
     margin-right: 15px;
     margin-left: 15px;
   }
-}
-
-
-
-.my-work {
-  background: #f8f9fa;
-  display: flex;
-  width: 80%;
-  margin: auto;
-  justify-content: space-around;
-  padding-bottom: 65px;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:500,700);
@@ -228,10 +235,10 @@ input:checked + label::before {
   }
 }
 
-.goals-section, .references-section {
+.references-section, .goals-section {
   background-color: #f8f9fa;
   width: 100%;
-  padding-bottom: 20vh;
+  padding-bottom: 15vh;
 }
 
 .social-media {
