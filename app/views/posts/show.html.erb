@@ -1,11 +1,11 @@
 <div class="post-show">
-  <div class="">
+  <div>
     <% if @post.image.attached? %>
       <%= image_tag @post.image, class: "post-index-image" %><br>
     <% end %>
   </div>
   <h2 class="post-show-title"><%= @post.title %></h2><br>
-  <div class="">
+  <div>
     <%= @post.content %>
   </div>
   <%= commontator_thread(@post) %>
