@@ -5,5 +5,5 @@ class Post < ApplicationRecord
   acts_as_commontable
 
   extend FriendlyId
-  friendly_id :id, use: :slugged
+  friendly_id :title, use: :slugged
 end
