@@ -74,26 +74,6 @@ body {
   padding-bottom: 65px;
 }
 
-@media (max-width: 575px) {
-  #tech-row1,
-  #tech-row2,
-  #tech-row3 {
-      display: inline-grid;
-      margin-right: 0px;
-      margin-left: 0px;
-  }
-}
-
-@media (min-width: 576px) {
-  .tech-row {
-      margin-top: 15px;
-  }
-
-  .card {
-    margin-right: 15px;
-    margin-left: 15px;
-  }
-}
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:500,700);
 
@@ -245,35 +225,6 @@ input:checked + label::before {
   font-family: 'Solway', serif;
 }
 
-@media(max-width: 500px) {
-  .me-text {
-    width: 65%;
-    text-align: center;
-    margin: auto;
-    padding-bottom: 5vh;
-  }
-  .me-intro-row {
-    display: contents;
-  }
-  body {
-    width: 100%;
-  }
-}
-
-@media(max-width: 500px) {
-  .card {
-    width: 75%;
-    margin: auto;
-    margin-bottom: 8vh;
-  }
-  .my-work {
-    display: block;
-  }
-  .skill-icons {
-    display: contents;
-  }
-}
-
 .lang-link {
   margin: auto;
   color: #000;
@@ -304,4 +255,57 @@ input:checked + label::before {
   margin: auto;
   text-align: center;
   margin-bottom: 3vh;
+}
+
+@media(max-width: 500px) {
+  .me-text {
+    width: 65%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 5vh;
+  }
+  .me-intro-row {
+    display: contents;
+  }
+  body {
+    width: 100%;
+  }
+}
+
+@media(max-width: 500px) {
+  .card {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 8vh;
+  }
+  .my-work {
+    display: block;
+  }
+  .skill-icons {
+    display: contents;
+  }
+  .me-section {
+    background-image: url("https://jd-website.s3.us-east-2.amazonaws.com/cool-background.png");
+  }
+}
+
+@media (max-width: 575px) {
+  #tech-row1,
+  #tech-row2,
+  #tech-row3 {
+      display: inline-grid;
+      margin-right: 0px;
+      margin-left: 0px;
+  }
+}
+
+@media (min-width: 575px) {
+  .tech-row {
+      margin-top: 15px;
+  }
+
+  .card {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
 }
