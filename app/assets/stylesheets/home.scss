@@ -242,6 +242,19 @@ input:checked + label::before {
   margin-bottom: 10vh;
 }
 
+.my-card {
+  margin: auto;
+  margin-bottom: 20vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
 .slideshow-container {
   position: relative;
   margin: auto;
