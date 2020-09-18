@@ -11,13 +11,18 @@ body {
 .me-section {
   background-color: #f8f9fa;
   width: 100%;
-  min-height: 55vh;
   height: auto;
 }
 
 .me-text {
   color: #ecf0f1;
+  text-shadow: 2px 2px #000;
   margin: 50px 230px 0px 140px;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 7vh;
+  margin-top: 7vh;
 }
 
 .me-img {
@@ -276,6 +281,7 @@ input:checked + label::before {
     text-align: center;
     margin: auto;
     padding-bottom: 5vh;
+    padding-top: 5vh;
   }
   .me-intro-row {
     display: contents;
