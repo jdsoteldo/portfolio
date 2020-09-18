@@ -11,6 +11,7 @@
 @import "trix/dist/trix";
 
 .trix-content {
+  text-align: justify;
   .attachment-gallery {
     > action-text-attachment,
     > .attachment {
@@ -34,5 +35,11 @@
       padding: 0 !important;
       max-width: 100% !important;
     }
+  }
+}
+
+@media(max-width:500px) {
+  .trix-content {
+    text-align: center;
   }
 }

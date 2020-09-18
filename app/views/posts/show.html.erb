@@ -7,7 +7,7 @@
   <h2 class="post-show-title"><%= @post.title %></h2><br>
   <div>
     <%= @post.content %>
-  </div>
+  </div><br>
   <%= commontator_thread(@post) %>
   <% if current_user && current_user.posts.include?(@post) %><br>
     <%= link_to 'Edit', edit_user_post_path(current_user.id, @post) %>
