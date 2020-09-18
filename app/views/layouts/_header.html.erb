@@ -14,13 +14,17 @@
         <a href="#work" class="nav-link active">Work</a>
         <a href="#goals" class="nav-link active">Goals</a>
         <a href="#references" class="nav-link active">References</a>
+        <%= link_to 'Check the Blog', posts_path, id:"blog-header-link", class: "nav-link active" %>
+      <% else %>
+        <%= link_to 'Home', root_path, class: "nav-link active" %>
       <% end %>
-      <%= link_to 'Check the Blog', posts_path, id:"blog-header-link", class: "nav-link active" %>
+
       <% if current_user %>
         <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class:"nav-link active" %>
       <% else %>
         <%= link_to 'Sign In', new_user_session_path, class:"nav-link active" %>
       <% end %>
+      
       <li class=" dropdown">
         <a class="nav-link dropdown-toggle social-media social-media-margin" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #000;">
           Social Media
