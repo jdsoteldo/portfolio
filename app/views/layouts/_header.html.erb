@@ -14,6 +14,7 @@
         <a href="#work" class="nav-link active">Work</a>
         <a href="#goals" class="nav-link active">Goals</a>
         <a href="#references" class="nav-link active">References</a>
+        <a href="#contact" class="nav-link active">Contact Me</a>
         <%= link_to 'Check the Blog', posts_path, id:"blog-header-link", class: "nav-link active" %>
       <% else %>
         <%= link_to 'Home', root_path, class: "nav-link active" %>
@@ -24,29 +25,7 @@
       <% else %>
         <%= link_to 'Sign In', new_user_session_path, class:"nav-link active" %>
       <% end %>
-      
-      <li class=" dropdown">
-        <a class="nav-link dropdown-toggle social-media social-media-margin" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #000;">
-          Social Media
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style=" border: none; background: #f8f9fa;">
-          <a class="dropdown-item  nav-link" href="mailto:dev.jdsoteldo@gmail.com?subject=hello there!">
-           <i class="fa fa-envelope fa-2x email"></i> Email
-          </a>
-          <a class="dropdown-item  nav-link" href="https://twitter.com/jdsoteldo" target="_blank">
-           <i class="fab fa-twitter fa-2x twitter"></i> Twitter
-          </a>
-          <a class="dropdown-item  nav-link" href="https://www.linkedin.com/in/jd-soteldo/" target="_blank">
-           <i class="fab fa-linkedin fa-2x linkedin"></i> Linkedin
-          </a>
-          <a class="dropdown-item  nav-link" href="https://instagram.com/soteldoooooo" target="_blank">
-           <i class="fab fa-instagram fa-2x instagram"></i> Instagram
-          </a>
-          <a class="dropdown-item  nav-link" href="https://github.com/jdsoteldo" target="_blank">
-           <i class="fab fa-github fa-2x github"></i> Github
-          </a>
-        </div>
-      </li>
+
     </div>
   </div>
 </nav>
