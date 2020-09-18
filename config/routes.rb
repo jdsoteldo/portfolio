@@ -15,5 +15,5 @@ Rails.application.routes.draw do
       put 'status'
     end
   end
-  resources :posts, param: :slug, only: [:show]
+  # resources :posts, param: :slug, only: [:show]
 end
