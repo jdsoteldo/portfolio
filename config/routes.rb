@@ -5,15 +5,15 @@ Rails.application.routes.draw do
   mount Commontator::Engine => '/commontator'
 
   resources :users do
-    resources :posts, except: [:index, :show]
+    resources :posts, except: [:index]
   end
 
-  resources :posts, only: [:index, :show]
+  resources :posts, only: [:index]
 
   resources :tasks do
     member do
       put 'status'
     end
   end
-  # resources :posts, param: :slug, only: [:show]
+  resources :posts, param: :slug, only: [:show]
 end
