@@ -59,3 +59,13 @@
     width: 75%;
   }
 }
+
+.pending-task {
+  color: #eccc68;
+  text-shadow: 1px 1px yellow;
+}
+
+.done-task {
+  color: green;
+  text-shadow: 1px 1px #7bed9f;
+}
