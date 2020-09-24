@@ -1,17 +1,21 @@
 
-<h2>Forgot your password?</h2>
+<div class="login-form">
+  <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
 
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
+    <div class="field mar-top">
+      <p class="login-label">Recovery Email:</p>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class:"login-field" %>
+    </div>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+    <div class="actions">
+      <%= f.submit "Reset Password", class:"submit-login top" %><br>
+      <p class="forgot"><%= link_to "Sign in", new_user_session_path, class: "forgot" %></p>
+    </div>
 
-  <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
-  </div>
-<% end %>
+    <div class="not-reg-div">
+      <p class="not-reg"><%= link_to "Not register? Sign Up!", new_user_registration_path, class:"not-reg-link" %></p>
+    </div>
+  <% end %>
 
-<%= render "devise/shared/links" %>
+</div>

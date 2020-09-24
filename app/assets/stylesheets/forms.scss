@@ -23,6 +23,7 @@
 .submit-login:hover {
   background-color: #273c75;
   transition: 0.2s;
+  color: #fff;
 }
 
 .not-reg, .not-reg-link {
@@ -37,6 +38,7 @@
 }
 
 .not-reg-div {
+  padding-top: 2.5vh;
   height: 8vh;
   margin-top: 30px;
   background-color: #273c75;
@@ -86,4 +88,21 @@
 
 .age {
   text-align: center;
+}
+
+.login-label {
+  width: 40%;
+  margin: auto;
+}
+
+.mar-top {
+  padding-top: 3vh;
+}
+
+.top {
+  margin-top: 5vh;
+}
+
+.bottom {
+  margin-bottom: 5vh;
 }
