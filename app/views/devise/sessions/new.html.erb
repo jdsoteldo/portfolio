@@ -1,11 +1,13 @@
 
 <div class="login-form">
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field"><br>
+  <div class="field mar-top">
+    <p class="login-label">Email</p>
     <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class:"login-field" %><br>
   </div>
 
   <div class="field">
+    <p class="login-label">Password</p>
     <%= f.password_field :password, autocomplete: "current-password", placeholder:"Password", class:"login-field" %><br>
   </div>
 
@@ -13,7 +15,7 @@
     <%= f.submit "Login", class:"submit-login" %><br>
     <p class="forgot"><%= link_to 'Forgot your Password?', new_password_path(resource_name), class:"forgot" %></p>
   </div><br>
-  <div class="not-reg-div"><br>
+  <div class="not-reg-div">
     <p class="not-reg"><%= link_to "Not register? Sign Up!", new_user_registration_path, class:"not-reg-link" %></p>
   </div>
   <% end %>
